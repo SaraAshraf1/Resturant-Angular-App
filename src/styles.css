@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: "Montserrat";
+    text-align: justify;
+    background-color: floralwhite;
+    
+  }
+  .arrowUp{
+    border: 2px solid;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .parallax {
+      /* Set a specific height */
+      min-height: 650px; 
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+    }
+ 
+ .modal-title{
+     color: darkred;
+     font-family: Oswald;
+     border-bottom:  1px ridge;
+     margin: 0px auto;
+     padding: 10px 0px;;
+ }
+  .modal-body{
+    
+    color: black;
+
+  }
+  .modal-content{
+      border-radius: 40px;
+  }
+  .modal-footer{
+    font-size: 80%;
+  }
+  .btn{
+      border-radius: .75rem;  
+  }
+  .btn-social-icon{
+    color: white !important;
+  }
+  .s-header{
+     
+      font-family: 'Oswald';
+      
+  }
+
+.btn-darkred{
+    background-color: darkred;
+    color: white;
+}
+.btn-darkred:hover{
+    color: white;
+}
+
+  @media only screen and  (max-width: 992px) {
+     
+    .container{margin-left:5px}
+  
+  }

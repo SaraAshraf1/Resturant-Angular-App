@@ -1,0 +1,10 @@
+<div class="desc">
+    <img class=" ml-1 mb-5 col-sm-3 col-lg-12 menuItems" [src]="productItem.image" alt="Generic placeholder image">
+    <div class="col-sm-8 col-lg-12 ">
+      <h4 class="mt-0 font-weight-bold s-header">{{productItem.name}}</h4>
+      {{productItem.ingredients}} <br/>
+    {{productItem.description}} <br/>
+      <span class="price">{{productItem.price | currency:'USD':'symbol':'2.2-2' }}</span>
+      <a (click)="updateCart()" data-toggle="modal" data-target="#cartModal" role="button" class="mb-5 btn btn-danger btn-sm">Add to Cart</a>
+    </div>
+</div>

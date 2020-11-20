@@ -1,0 +1,48 @@
+.bannerImage{
+    background-image: url("src/assets/images/ivan-torres-MQUqbmszGGM-unsplash.jpg");;
+ }
+.navbar{
+    transition: all ease .5s;
+    padding:20px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
+    font-size: 18px;
+  
+}
+.navbar-brand {
+    font-size: 1.75rem;
+    transition: all ease .5s;
+    margin-right: 35%;
+  }
+  .navbar-dark .navbar-toggler {
+    color: white;
+    border-color: white;
+  }
+
+.banner {
+    position: absolute;
+    top: 25%;
+    left: 4%;
+  
+}
+.banner-header{
+    font-size: 92px;
+    font-family: 'Oswald';
+    padding-bottom: 20px;
+}
+.ReserveTable {
+    position: absolute;
+    top: 55%;
+    left: 4%;
+}
+.OrderNow {
+    position: absolute;
+    top: 55%;
+    left: 18%;
+}
+@media only screen and  (max-width: 992px) {
+
+  .banner-header{font-size:60px; }
+
+  .banner{top:37%}
+
+}

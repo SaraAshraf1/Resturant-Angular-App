@@ -1,0 +1,71 @@
+
+         <!--sign up-->
+        
+    
+            <!--Body-->
+            <div class="modal-body mb-1">
+              <form #signUpForm="ngForm" (ngSubmit)="log(signUpForm)">
+                 <div class="form-group">
+              <div class="  mb-4 formItem">
+                <i class="fas fa-user "></i>
+                <input #name="ngModel"
+                 type="text" 
+                 placeholder="Name" 
+                 name="name"
+                 [(ngModel)]="model.name" 
+                 [ngClass]="{ 'is-invalid': name.touched && name.invalid }"  
+                  class="col-10 formInput form-control form-control-sm " 
+                  required>
+                <span  class="offset-1 mt-1 invalid-feedback">Name can't be blank.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="  mb-4 formItem">
+                <i class="fas fa-envelope "></i>
+                <input #email="ngModel" type="email"  placeholder="Email" name="email" [(ngModel)]="model.email" [ngClass]="{ 'is-invalid': email.touched && email.invalid }" class="col-10 formInput form-control form-control-sm" required email>
+                <span  class="offset-1 mt-1 invalid-feedback">
+                  <span *ngIf="email.errors.required">Email can't be blank.</span> 
+                  <span *ngIf="email.errors.email">Email is not valid.</span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="  mb-4 formItem">
+                <i class="fas fa-home "></i>
+                <input  #address="ngModel" type="text"  placeholder="Address" name="address" [(ngModel)]="model.address" [ngClass]="{ 'is-invalid': address.touched && address.invalid }" class="col-10 formInput form-control form-control-sm" required>
+                <span  class="offset-1 mt-1 invalid-feedback">Address can't be blank.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="  mb-4 formItem">
+                <i class="fa fa-phone-alt "></i>
+                <input #tel="ngModel" type="tel" placeholder="Mobile Number" data-format="+0" name="tel"  [(ngModel)]="model.tel" [ngClass]="{ 'is-invalid': tel.touched && tel.invalid }"  class="col-10 formInput form-control form-control-sm" required>
+                <span  class="offset-1 mt-1 invalid-feedback">Mobile Number can't be blank.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="  mb-4 formItem">
+                <i class="fas fa-lock "></i>
+                <input #password="ngModel" type="password"  placeholder="Password" name="password" [(ngModel)]="model.password" [ngClass]="{ 'is-invalid': password.touched && password.invalid }" class=" col-10 formInput form-control form-control-sm" required minlength="6">
+                <span  class="offset-1 mt-1 invalid-feedback">
+                  <span *ngIf="password.errors.required">password can't be blank.</span>
+                  <span *ngIf="password.errors.minlength">Password must be at least 6 characters</span>
+              </span>
+              </div>
+            </div>
+          
+              <div class="text-center mt-2">
+                <button type="submit" class="btn btn-darkred btn-block" >Sign Up<i class="fas fa-user-plus ml-1"></i></button>
+              </div>
+             </form>
+            </div>
+          
+            <!--Footer-->
+            <div class="modal-footer pb-0">
+              <div class="options text-right">
+                <p class="pt-1">Already have an account? <a id="loginBtn" (click)="onloginLinkClick()" data-toggle="tab" href="#loginPanel" class="blue-text">Log In</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-secondary waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+          
+          <!--/.sign up-->

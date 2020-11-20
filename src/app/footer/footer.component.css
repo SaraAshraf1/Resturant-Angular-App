@@ -1,0 +1,13 @@
+
+  
+  .address{
+    display:inline-table;
+  }  
+  .footer{
+    background-color: darkred;
+      color: white;
+  }
+  @media only screen and  (max-width: 992px) {
+    .footerQuote{margin-top:20px}
+  
+  }

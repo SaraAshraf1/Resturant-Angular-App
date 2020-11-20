@@ -1,0 +1,13 @@
+.emptyCart{
+    text-align: center;
+     margin: revert;
+}
+.cartTotal{ 
+    margin-right: 60px;
+     }
+@media only screen and  (min-width: 992px) {
+
+ .cartTotal{ 
+margin-right: 300px;
+ }
+}

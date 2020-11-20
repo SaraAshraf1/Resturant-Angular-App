@@ -1,0 +1,36 @@
+#registerModal {
+  font-size: 90%;
+}
+
+.loginTab {
+  border-radius: 0.5rem 0rem 0rem 0.5rem !important;
+}
+.signupTab {
+  border-radius: 0rem 0.5rem 0.5rem 0rem !important;
+}
+.loginNavLink {
+  background-color: lightgray;
+  color: white;
+  padding: 15px;
+  margin-top: -10px;
+}
+.tab-content {
+  padding: 20px 40px;
+}
+.formInput {
+  border: none;
+  border-bottom: 1px solid darkgray;
+  margin-left: 20px;
+}
+.formItem {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-pills .nav-link.active {
+  background-color: darkred;
+}
+@media only screen and (max-width: 992px) {
+  #registerModal {
+    margin-top: 30px;
+  }
+}

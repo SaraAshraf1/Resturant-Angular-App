@@ -1,0 +1,19 @@
+
+<div class="media mt-3" >
+    <img [src]="cartItem.image" class="mr-3 menuItems" alt="cartItem">
+    <div class="media-body">
+      <div class=" mt-0">{{cartItem.name}}
+        <span class="quantity">
+       
+        
+            <a style=" color: #6c757d "  (click)="decrement()"><i class="fas fa-minus-square"></i></a>
+            {{cartItem.quantity}}
+            <a style=" color: #6c757d "  (click)="increment()"><i class="fas fa-plus-square mr-2"></i></a>
+
+            <a style=" color: #6c757d "  (click)="remove()"><i class="far fa-trash-alt ml-3"></i></a>
+        </span>
+    </div>
+      <span class="price ">{{cartItem.price * cartItem.quantity| currency:'USD':'symbol':'2.2-2' }}</span>
+     
+    </div>
+  </div>

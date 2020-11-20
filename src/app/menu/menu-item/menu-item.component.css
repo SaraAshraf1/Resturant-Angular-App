@@ -1,0 +1,26 @@
+.menuItems{
+    height: 200px;
+    width: 200px;
+}
+
+  .price {
+    font-size: 18px;
+    color: #fd9d3e;
+    font-weight: 800;
+    display: block;
+    padding-bottom: 15px;
+}
+ .desc{
+  text-align: center;
+}
+@media only screen and  (max-width: 992px) {
+    .desc{
+        display: flex;
+      }
+    .menuItems{
+    height:150px;
+        width:150px
+    }
+  
+   
+  }

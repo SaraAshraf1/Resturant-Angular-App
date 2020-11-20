@@ -1,0 +1,18 @@
+.menuItems{
+    height: 70px;
+    width: 70px;
+}
+
+  .price {
+    font-size: 14px;
+    color: #fd9d3e;
+
+}
+
+.quantity{
+float: right;
+font-size: 20px;
+color:red;
+
+font-family: monospace;
+}

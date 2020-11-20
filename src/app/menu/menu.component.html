@@ -1,0 +1,22 @@
+ 
+<!--#region menu  -->
+<div id="menu" class="parallax menuImage pb-5 pt-2">
+    <div class="container ">
+        <div style="display: flex;">
+     <h2  class="pt-3 mt-3 mb-5 font-weight-bold s-header">Menu</h2>
+     <a  class="cartBtn btn" data-toggle="modal" data-target="#cartModal" role="button" ><i class="fas fa-shopping-basket fa-lg mr-2"></i><span class="font-weight-bold ">{{numberOfItems}} items <br/>
+        <span style="color: red;font-family: Oswald;"> {{total| currency:'USD':'symbol':'1.2-2' }}</span>
+       </span></a>
+    </div>
+     <div class="row justify-content-center">
+        <div class="col-lg-3 col-12" *ngFor="let item of items">
+         <app-menu-item  [productItem]=item></app-menu-item>
+        </div>
+
+     </div>
+    
+    </div>
+    </div>
+    <!--#endregion -->
+    <app-cart (cartTemp)=setUpdatedCartItems($event)></app-cart>
+    
